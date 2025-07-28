@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html lang="lt">
-<head><meta charset="UTF-8"><title>Bugelendas sutartis</title></head>
+<head>
+    <meta charset="UTF-8">
+    <title>Bugelendas – sutarties forma</title>
+</head>
 <body>
-<h1>Bugelendas – sutarties forma</h1>
-<!-- Čia bus HTML forma -->
+    <h1>Bugelendas – sutarties forma</h1>
+    <form method="POST">
+        <label>Vaiko vardas ir pavardė: <input type="text" name="full_name" required></label><br><br>
+        <label>Gimimo data: <input type="date" name="birth_date" required></label><br><br>
+        <label>Miestas: <input type="text" name="city" required></label><br><br>
+        <label>Tėvų/globėjų vardas: <input type="text" name="parent_name" required></label><br><br>
+        <label>Telefonas: <input type="text" name="phone" required></label><br><br>
+        <label>El. paštas: <input type="email" name="email" required></label><br><br>
+        <label>Pasirinkite pamainą:
+            <select name="camp_session" required>
+                <option value="2026-07-06 – 07-10">2026 m. liepos 6–10 d.</option>
+                <option value="2026-07-13 – 07-17">2026 m. liepos 13–17 d.</option>
+                <option value="2026-07-20 – 07-24">2026 m. liepos 20–24 d.</option>
+            </select>
+        </label><br><br>
+        <button type="submit">Pateikti sutartį</button>
+    </form>
 </body>
 </html>
