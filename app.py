@@ -51,4 +51,5 @@ Pasirašydamas sutinku su visomis stovyklos taisyklėmis ir įsipareigoju sumok�
 
         return "Sutartis sėkmingai pateikta!"
 
-    return render_template('form.html')
+    return render_template('contract_form.html')
+
